@@ -1,0 +1,40 @@
+const express = require('express');
+const mongoose = require('mongoose');
+
+const app = express();
+const PORT = 3000;
+
+// Connect to MongoDB cluster
+mongoose.connect('mongodb+srv://<username>:<password>@<cluster-address>/<dbname>?retryWrites=true&w=majority', {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+})
+.then(() => {
+  console.log('Connected to MongoDB');
+})
+.catch((err) => {
+  console.error('Failed to connect to MongoDB:', err);
+});
+
+// Define MongoDB schema and model
+const dataSchema = new mongoose.Schema({
+  name: String,
+  age: Number,
+  email: String
+});
+
+const Data = mongoose.model('Data', dataSchema);
+
+// Define route to fetch data from MongoDB
+app.get('/api/data', async (req, res) => {
+  try {
+    const data = await Data.find();
+    res.json(data);
+  } catch (err) {
+    res.status(500).json({ message: 'Internal Server Error' });
+  }
+});
+
+app.listen(PORT, () => {
+  console.log(`Server is running on http://localhost:${PORT}`);
+});
