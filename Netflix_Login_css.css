@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', 'san-serif';
+    box-sizing: border-box;
+
+}
+body{
+    background-color: black;
+}
+.header{
+    width:100;
+    height: 100vh;
+    background-image:url("login_background_img.jpg") ;
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8px;
+    position: relative;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 25px;
+}
+.logo{
+    width:200px;
+    cursor: pointer;
+    background:transparent;
+    border-radius: 50px;
+    position: relative;
+    z-index: 10;
+}
+nav button{
+    border:0;
+    outline: 0;
+    background-color: rgb(255, 8, 8);
+    color: white;
+    font-size: 12px;
+    padding: 7px 20px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+}
+#lang{
+    background: transparent;
+    color:rgb(255,0, 0);
+   border:2px solid white
+}
+.header_content{
+    color: white;
+    text-align: center;
+    width: 650px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); 
+}
+.header_content{
+    background-color: rgb(0, 0, 0,0.2);
+
+}
+#login_title{
+    font-size: 60px;
+    line-height: 65px;
+    font-weight: 600;
+}
+.header_content h3{
+    font-weight: 400px;
+    margin-bottom: 20px;
+}
+.email_signup{
+    background:white;
+    border-radius: 4px;
+    display:flex;
+    align-items:center;
+    margin-top:30px;
+    overflow: hidden;   
+}
+.email_signup input{
+    flex:1;
+    border:0;
+    outline:0;
+    margin-left: 20px;
+    
+}
+.email_signup button{
+    background-color: red;
+    border:0;
+    outline:0;
+    color:white;
+    font-size: 16px;
+    cursor: pointer;
+    padding:15px;
+    
+}
+.sepration{
+    height:7px;
+    background-color: rgba(74, 72, 72, 0.642);
+    opacity: 20px;
+}
+.feature {
+    color: white;
+    padding-top: 80px;
+    text-align: center;
+    padding-bottom: 60px;
+}
+.feature h1{
+    color: white;
+    padding-left: 30px;
+    font-size: 55px;
+}
+.feature p{
+    font-size: 25px;
+}
+.Netflix_features_png{
+    align-items: center;
+    
+}
+.feature{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.feature_heading{
+    padding-top: 150px;
+    padding-left: 30px;
+}
+.sec3_heading h1{
+    color: white;
+    padding-left: 30px;
+    font-size: 55px;
+    text-align: center;
+}
+.sec3{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.sec3_heading p{
+    font-size: 25px;
+    color: white;
+    text-align: center;
+}
+.sec3_heading h1{
+    padding-top: 200px;
+    padding-left: 30px;
+}
+.sec4 h1{
+    color: white;
+    text-align: center;
+    padding-left: 30px;
+    font-size: 55px;
+    padding-top: 150px;
+}
+.sec4{
+    display: flex;
+    justify-content: space-around;
+}
+.sec4 p{
+    font-size: 25px;
+    color: white;
+    text-align: center;
+}
+.sec5 h1{
+    color: white;
+    text-align: center;
+    padding-left: 30px;
+    font-size: 55px;
+    padding-top: 150px;
+}
+.sec5 p{
+    font-size: 25px;
+    color: white;
+    text-align: center;
+}
+.sec5{
+    display: flex;
+    justify-content: space-around;
+}
+.sec4{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.sec5{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.sec6{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.sec6 p{
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+    
+.sec6_email{
+
+    align-items: center;
+    background:white;
+    border-radius: 4px;
+    display: flex;
+    align-items:center;
+    margin-left:500px;
+    overflow: hidden;   
+    width: 500px;
+    align-self: center;
+    margin-top: 80px;
+}
+.sec6_email input{
+    flex:1;
+    border:0;
+    outline:0;
+    margin-left: 20px;  
+}
+.sec6_email button{
+    background-color: red;
+    border:0;
+    outline:0;
+    color:white;
+    font-size: 16px;
+    cursor: pointer;
+    padding:15px;
+}
+.sec7_p {
+    color: white;
+    padding-left: 210px;
+    line-height: 20px;
+    font-size: 20px;
+}
+.sec7_p a{
+    color: grey;
+    
+}
+.list1{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding-bottom: 60px
+
+}
+li a{
+    color: grey;
+    line-height: 35px; 
+    font-size: 15px;
+}
+.sec8{
+    background: transparent;
+    color:rgb(255,0, 0);
+    line-height: 70px; 
+}
+.footer_p{
+    color: grey;
+    cursor:pointer;
+    line-height: 35px; 
+}
